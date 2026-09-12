@@ -79,3 +79,7 @@ node --check static/main.js
 ## Screenshots
 
 Copilot milestone evidence is available in the `SCREENSHOTS` folder.
+
+## Responsible Copilot Use
+
+Copilot suggestions were reviewed before being accepted. For example, Copilot suggested replacing the timestamp-based game timer with a `setInterval` counter. This suggestion was rejected because interval callbacks can be delayed or throttled, which can make elapsed-time tracking less accurate. The existing timestamp-based implementation was retained because it calculates elapsed time from actual timestamps and supports accurate reset and completion behavior.
